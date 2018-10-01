@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '491675591838531585').join();
+    client.channels.find(c => c.id === '486314722086617088').join();
 });
 
 client.on('ready', () => {
