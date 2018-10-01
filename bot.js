@@ -1,6 +1,9 @@
 const Discord = require("discord.js")
 const client = new Discord.Client();
 
+client.on('ready', () => {
+    client.channels.find(c => c.id === '491658595507765268').join();
+});
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
