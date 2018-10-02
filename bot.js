@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`أحببتك جداً.. لدرجه أنه عندما تغيب عني.. يغيب معاك كل شيء. ❤`,"http://twitch.tv/S-F")
+client.user.setGame(`Fuck My Life .. ☸`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
