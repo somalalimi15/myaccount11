@@ -2,12 +2,12 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '493570120442970133').join();
+    client.channels.find(c => c.id === '496332757765718036').join();
 });
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Fuck My Life .. ☸`,"http://twitch.tv/S-F")
+client.user.setGame(`- Esinti ..`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
