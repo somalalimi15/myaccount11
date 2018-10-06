@@ -5,8 +5,12 @@ client.on('ready', () => {
     client.channels.find(c => c.id === '496333620580057098').join();
 });
 
+client.on('ready', () => {
+    client.channels.find(c => c.id === '491674187870502944').join();
+});
+
     client.on('ready', () => {
-     client.user.setActivity("- Esinti .",{type: 'Listening'});
+     client.user.setActivity("- وآحـد مقهورر من [رينآد] .ء",{type: 'Listening'});
 
 });
 
