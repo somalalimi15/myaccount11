@@ -11,5 +11,9 @@ client.on('ready', () => {
 
 });
 
+client.on('ready', () => {
+    client.channels.find(c => c.id === '496332757765718036').join();
+});
+
+
 client.login(process.env.BOT_TOKEN);
- 
