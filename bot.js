@@ -2,12 +2,12 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '500450967356047371').join();
+    client.channels.find(c => c.id === '500441107235209248').join();
 });
 
 
     client.on('ready', () => {
-     client.user.setActivity("With a Heart SweetHeart .",{type: 'Listening'});
+     client.user.setActivity("Genial 🍃.",{type: 'Listening'});
 
 });
 
