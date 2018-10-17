@@ -7,18 +7,12 @@ client.on('ready', () => {
 
 
     client.on('ready', () => {
-     client.user.setActivity("Genial 🍃,'",{type: 'Listening'});
+     client.user.setActivity("Genial . 🍃,",{type: 'Listening'});
  
 });
 
 
-client.on('guildMemberAdd', member=> {
 
-
-
-    client.channels.get("501515014570508319").send(`**Welcome To Nuvole.**`);
-
-    });
 
 
 client.login(process.env.BOT_TOKEN); 
