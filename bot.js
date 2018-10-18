@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 
     client.on('ready', () => {
-     client.user.setActivity("Genial . 🍃,",{type: 'Listening'});
+     client.user.setActivity("Netflix.",{type: 'Listening'});
  
 });
 
