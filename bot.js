@@ -3,7 +3,9 @@ const client = new Discord.Client();
 var prefix = "s"
 
 
-
+client.on('ready', () => {
+    client.channels.find(c => c.id === '458667530483924993').join();
+});
 
 client.on('message', function(message) {
 	const myID = "368768446327947265";
@@ -12,7 +14,7 @@ client.on('message', function(message) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setUsername(args);
-        message.channel.send('**تم تغير الاسم بنجاح**').then(msg => {
+        message.channel.send('**SetName,Done!**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
@@ -20,7 +22,7 @@ client.on('message', function(message) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args , 'https://twitch.tv/6xlez1');
-        message.channel.send('**تم تغير الحالة لستريمنج**').then(msg => {
+        message.channel.send('**Streaming,Done!🎶**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
@@ -28,7 +30,7 @@ client.on('message', function(message) {
 				        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args);
-        message.channel.send('**تم تغير الحالية لبلاينق**').then(msg => {
+        message.channel.send('**Playing,Done!🎶**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
@@ -36,7 +38,7 @@ client.on('message', function(message) {
 				        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'LISTENING'});
-        message.channel.send('**تم تغير الحالة ليسنج**').then(msg => {
+        message.channel.send('**Listening,Done!🎶**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
@@ -44,7 +46,7 @@ client.on('message', function(message) {
 				        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'WATCHING'});
-        message.channel.send('**تم التغير لواتشنق**').then(msg => {
+        message.channel.send('**Watching,Done!🎶**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
