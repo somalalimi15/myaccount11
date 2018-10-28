@@ -2,6 +2,13 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 var prefix = "s"
 
+client.on('guildMemberAdd', member=> {
+
+
+
+    client.channels.get("505300946096488451").send(`** - Wèlčomè Ťo Maģic..  **`);
+
+    });
 
 client.on('ready', () => {
     client.channels.find(c => c.id === '505344559341895680').join();
