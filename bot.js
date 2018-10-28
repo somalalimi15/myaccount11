@@ -4,7 +4,7 @@ var prefix = "s"
 
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '499702127430729749').join();
+    client.channels.find(c => c.id === '505344559341895680').join();
 });
 
 client.on('message', function(message) {
