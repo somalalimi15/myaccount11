@@ -2,7 +2,12 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 var prefix = "-s"
 
+client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
+    var channel =Sal.guild.channels.find('name', 'magic')
+    if (!channel) return;
+    channel.send("** - Welcome To Maagiic '.**");
+    });
 
 client.on('ready', () => {
     client.channels.find(c => c.id === '505344559341895680').join();
