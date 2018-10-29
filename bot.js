@@ -10,7 +10,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
     });
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '495900803450535958').join();
+    client.channels.find(c => c.id === '495904082796740628').join();
 });
 
 client.on('message', function(message) {
