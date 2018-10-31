@@ -4,13 +4,13 @@ var prefix = "-s"
 
 client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
-    var channel =Sal.guild.channels.find('name', 'bond')
+    var channel =Sal.guild.channels.find('name', 'proven')
     if (!channel) return;
-    channel.send("** - Welcome To Bond, **");
+    channel.send("** - Welcome To Proven, **");
     });
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '495904082796740628').join();
+    client.channels.find(c => c.id === '504939102030921729').join();
 });
 
 client.on('message', function(message) {
