@@ -4,7 +4,7 @@ var prefix = "-s"
 
 client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
-    var channel =Sal.guild.channels.find('name', 'Kńights')
+    var channel =Sal.guild.channels.find('name', 'kńights')
     if (!channel) return;
     channel.send("** - Welcome To SKiLLz Kńights , :Hearts: **");
     });
