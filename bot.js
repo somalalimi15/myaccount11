@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const client = new Discord.Client();
-var prefix = "-s"
+var prefix = "-s
 
 client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
