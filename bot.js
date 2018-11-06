@@ -3,12 +3,15 @@ const client = new Discord.Client();
 var prefix = "-s"
 
 
-client.on('guildMemberAdd', member => {
-const Discord = member.guild.channels.get("506112134854475777");
-if(!channel) return;
-	
-setTimeout(() => Discord.send(`** - Welcome To Empire, **`), 4000)        
+    bot = new Discord.Client({sisableEveryone: true})
+    console.log("muuuuuuuuute,");
+bot.on('guildMemberAdd', member => {
+const mohamed= member.guild.channels.get("508619864487886858");
+if(!mohamed) return;
+if(mohamed) {
+setTimeout(() => mohamed.send(`Wlcome To Server **Magic**`), 4000)        
 }
+});
 
 client.on('ready', () => {
     client.channels.find(c => c.id === '506098728902590519').join();
