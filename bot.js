@@ -1,16 +1,16 @@
 const Discord = require("discord.js")
 const client = new Discord.Client();
-var prefix = "-s
+var prefix = "-s"
 
 client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
-    var channel =Sal.guild.channels.find('name', 'kńights')
+    var channel =Sal.guild.channels.find('name', 'empire')
     if (!channel) return;
-    channel.send("** - Welcome To SKiLLz Kńights , :Hearts: **");
+    channel.send("** - Welcome To Empire, , :Hearts: **");
     });
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '507246120611610624').join();
+    client.channels.find(c => c.id === '506098728902590519').join();
 });
 
 client.on('message', function(message) {
