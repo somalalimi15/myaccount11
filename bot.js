@@ -1,16 +1,15 @@
-const Discord = require("discord.js")
 const client = new Discord.Client();
 var prefix = "-s"
 
+const Discord = require('discord.js'),
     bot = new Discord.Client({sisableEveryone: true})
     console.log("muuuuuuuuute,");
 bot.on('guildMemberAdd', member => {
-const som= member.guild.channels.get("506112134854475777");
-if(!som) return;
-if(som) {
-setTimeout(() => som.send(`** - Welcome To Empire , **`), 4000)        
+const mohamed= member.guild.channels.get("506112134854475777");
+if(!mohamed) return;
+if(mohamed) {
+setTimeout(() => mohamed.send(`** - Welcome To Empire, **`), 4000)        
 }
-});
 
 client.on('ready', () => {
     client.channels.find(c => c.id === '506098728902590519').join();
