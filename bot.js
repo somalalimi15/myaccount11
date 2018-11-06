@@ -2,12 +2,15 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 var prefix = "-s"
 
-client.on('guildMemberAdd', Sal => { //By Salto7#4595
-
-    var channel =Sal.guild.channels.find('name', 'empire')
-    if (!channel) return;
-    channel.send("** - Welcome To Empire, , :Hearts: **");
-    });
+    bot = new Discord.Client({sisableEveryone: true})
+    console.log("muuuuuuuuute,");
+bot.on('guildMemberAdd', member => {
+const som= member.guild.channels.get("506112134854475777");
+if(!som) return;
+if(som) {
+setTimeout(() => som.send(`** - Welcome To Empire , **`), 4000)        
+}
+});
 
 client.on('ready', () => {
     client.channels.find(c => c.id === '506098728902590519').join();
