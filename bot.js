@@ -5,8 +5,8 @@ var prefix = "-s"
 
 client.on('guildMemberAdd', member => {
 const Discord = member.guild.channels.get("506112134854475777");
-if(!Discord) return;
-if(Discord) {
+if(!channel) return;
+	
 setTimeout(() => Discord.send(`** - Welcome To Empire, **`), 4000)        
 }
 
